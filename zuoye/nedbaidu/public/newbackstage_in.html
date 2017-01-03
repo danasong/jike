@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/newsback.css">
+    <title>百度新闻后台管理系统</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">百度新闻</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">root用户<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-md-12 man_div">
+        <div class="col-md-2 menu_list">
+            <ul class="col-md-12 ul_man_ul">
+                <li class="ul_man">
+                    <div class="head_div">
+                        <a href="#">新闻管理</a>
+                        <i class="icon rotate_icon"></i>
+                    </div>
+                    <ul style="display: block;">
+                        <li style="background: #052535"><a style="color: rgb(255, 255, 255);" href="/newbackstage_in.html">增加新闻</a></li>
+                        <li><a href="/newbackstage.html">查看新闻</a></li>
+                    </ul>
+                </li>
+                <li class="ul_man">
+                    <div class="head_div">
+                        <a href="#">新闻管理</a>
+                        <i class="icon"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#">增加新闻</a></li>
+                        <li><a href="#">查看新闻</a></li>
+                    </ul>
+                </li>
+                <li class="ul_man">
+                    <div class="head_div">
+                        <a href="#">新闻管理</a>
+                        <i class="icon"></i>
+                    </div>
+                    <ul>
+                        <li><a href="#">增加新闻</a></li>
+                        <li><a href="#">查看新闻</a></li>
+                    </ul>
+                </li>
+                <li class="ul_man">
+                <div class="head_div">
+                    <a href="#">未开发</a>
+                    <i class="icon"></i>
+                </div>
+                <ul >
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                </ul>
+            </li>
+            <li class="ul_man">
+                <div class="head_div">
+                    <a href="#">未开发</a>
+                    <i class="icon"></i>
+                </div>
+                <ul style="display: block;">
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                    <li><a href="#">未开发</a></li>
+                </ul>
+            </li>
+            <li class="ul_man tail_li">
+                <div class="head_div">
+                    <div class="tail_div">
+                        <h3>极客学院</h3>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+        <div class="col-md-9 content_div_man">
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">新闻管理</a></li>
+            </ol>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">新闻管理</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="form">
+                        <div class="form-group col-md-5">
+                            <label for="newsname">新闻类型</label>
+                            <select id="newsname" class="form-control">
+                                <option>请选择</option>
+                                <option>推荐</option>
+                                <option>百家</option>
+                                <option>本地</option>
+                                <option>图片</option>
+                                <option>娱乐</option>
+                                <option>社会</option>
+                                <option>军事</option>
+                                <option>互联网</option>
+                                <option>科技</option>
+                                <option>女人</option>
+                                <option>更多</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="newstext">新闻标题</label>
+                            <input id="newstext" type="text" class="form-control" placeholder="江苏苏宁客场逼平广州恒大 足协杯决赛悬念继续 ">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="newssuccess">新闻来源</label>
+                            <input id="newssuccess" type="text" class="form-control" placeholder="极客学院">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="newsdate">时间</label>
+                            <input id="newsdate" type="date" class="form-control" placeholder="时间">
+                        </div>
+                        <!-- <div class="form-group col-md-9">
+                            <label for="exampleInputFile">新闻图片</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">图片格式-jpg,png</p>
+                        </div> -->
+                        <div class="form-group col-md-5">
+                            <label for="newsimg">图片地址</label>
+                            <input id="newsimg" type="text" class="form-control" placeholder="图片地址">
+                        </div>
+                        <div class="form-group col-md-9">
+                            <button id="submits" type="submit" class="btn btn-default col-md-offset-5 btn-success  col-md-1">提交</button>
+                            <button type="reset" class="btn btn-default col-md-offset-1 btn-danger  col-md-1">重置</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="inset_divs" class="modal fade">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title">信息</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p id="inset_p"></p>
+	      </div>
+	      <div class="modal-footer">
+	        <button id="inset_bttns" type="button" class="btn btn-primary">确认</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/newsback.js"></script>
+</body>
+
+</html>

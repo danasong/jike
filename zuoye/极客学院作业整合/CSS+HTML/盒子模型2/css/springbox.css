@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.spring_div{
+    -webkit-column-count:3;
+    -moz-column-rule-style:double;
+    -webkit-column-rule-style:double;
+}
+
+
+.center_div{
+     background-color: #666;
+     width: 600px;
+     height: 600px;
+     display: -webkit-box;
+     -webkit-box-pack:center;
+     -webkit-box-align:center;
+     display: -moz-box;
+     -moz-box-pack:center;
+     -moz-box-align:center;
+}

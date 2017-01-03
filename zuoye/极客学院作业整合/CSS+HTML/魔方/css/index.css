@@ -1,0 +1,356 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* 设置动画 */
+#box {
+	-webkit-animation-name: square;
+	/* -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-duration:3s; */
+
+	-webkit-animation: square 8s linear infinite;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 150px 150px 0;/*  -webkit-perspective-origin: 25% 80%;   
+    -webkit-transform:translateZ(80px);  */ 
+}
+/* A面黄色 */
+.square_a div {
+	width: 90px;
+	height: 90px;
+	background-color: #D4F00B;
+}
+.yellow {
+	position: absolute;
+	border-radius: 20%;
+}
+.yellow_1 {
+	position: absolute;
+	left: 100px;
+	border-radius: 20%;
+}
+.yellow_2 {
+	position: absolute;
+	left: 200px;
+	border-radius: 20%;
+}
+.yellow_3 {
+	position: absolute;
+	bottom: 102px;
+	border-radius: 20%;
+}
+.yellow_4 {
+	position: absolute;
+	left: 100px;
+	bottom: 102px;
+	border-radius: 20%;
+}
+.yellow_5 {
+	position: absolute;
+	left: 200px;
+	bottom: 102px;
+	border-radius: 20%;
+}
+.yellow_6 {
+	position: absolute;
+	bottom: 0;
+	border-radius: 20%;
+}
+.yellow_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	border-radius: 20%;
+}
+.yellow_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	border-radius: 20%;
+}
+/* 蓝色 */
+.square_b div {
+	width: 90px;
+	height: 90px;
+	border-radius: 20%;
+	background-color: #3213C7;
+}
+.blue {
+	position: absolute;
+}
+.blue_1 {
+	position: absolute;
+	left: 100px;
+}
+.blue_2 {
+	position: absolute;
+	left: 200px;
+}
+.blue_3 {
+	position: absolute;
+	bottom: 102px;
+}
+.blue_4 {
+	position: absolute;
+	bottom: 102px;
+	left: 100px;
+}
+.blue_5 {
+	position: absolute;
+	bottom: 102px;
+	left: 200px;
+}
+.blue_6 {
+	position: absolute;
+	bottom: 0;
+}
+.blue_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.blue_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+/* 红色 */
+.square_c div {
+	width: 90px;
+	height: 90px;
+	border-radius: 20%;
+	background-color: #BD0606;
+}
+.red {
+	position: absolute;
+}
+.red_1 {
+	position: absolute;
+	left: 100px;
+}
+.red_2 {
+	position: absolute;
+	left: 200px;
+}
+.red_3 {
+	position: absolute;
+	bottom: 102px;
+}
+.red_4 {
+	position: absolute;
+	bottom: 102px;
+	left: 100px;
+}
+.red_5 {
+	position: absolute;
+	bottom: 102px;
+	left: 200px;
+}
+.red_6 {
+	position: absolute;
+	bottom: 0;
+}
+.red_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.red_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+/* 紫色 */
+.square_d div {
+	width: 90px;
+	height: 90px;
+	border-radius: 20%;
+	background-color: #834AF9;
+}
+.violet {
+	position: absolute;
+}
+.violet_1 {
+	position: absolute;
+	left: 100px;
+}
+.violet_2 {
+	position: absolute;
+	left: 200px;
+}
+.violet_3 {
+	position: absolute;
+	bottom: 102px;
+}
+.violet_4 {
+	position: absolute;
+	bottom: 102px;
+	left: 100px;
+}
+.violet_5 {
+	position: absolute;
+	bottom: 102px;
+	left: 200px;
+}
+.violet_6 {
+	position: absolute;
+	bottom: 0;
+}
+.violet_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.violet_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+/* 绿色 */
+
+.square_e div {
+	width: 90px;
+	height: 90px;
+	border-radius: 20%;
+	background-color: #11F472;
+}
+.green {
+	position: absolute;
+}
+.green_1 {
+	position: absolute;
+	left: 100px;
+}
+.green_2 {
+	position: absolute;
+	left: 200px;
+}
+.green_3 {
+	position: absolute;
+	bottom: 102px;
+}
+.green_4 {
+	position: absolute;
+	bottom: 102px;
+	left: 100px;
+}
+.green_5 {
+	position: absolute;
+	bottom: 102px;
+	left: 200px;
+}
+.green_6 {
+	position: absolute;
+	bottom: 0;
+}
+.green_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.green_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+/* 橙色 */
+.square_f div {
+	width: 90px;
+	height: 90px;
+	border-radius: 20%;
+	background-color: #EF9C04;
+}
+.orange {
+	position: absolute;
+}
+.orange_1 {
+	position: absolute;
+	left: 100px;
+}
+.orange_2 {
+	position: absolute;
+	left: 200px;
+}
+.orange_3 {
+	position: absolute;
+	bottom: 102px;
+}
+.orange_4 {
+	position: absolute;
+	bottom: 102px;
+	left: 100px;
+}
+.orange_5 {
+	position: absolute;
+	bottom: 102px;
+	left: 200px;
+}
+.orange_6 {
+	position: absolute;
+	bottom: 0;
+}
+.orange_7 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+}
+.orange_8 {
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+}
+.square_a {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	text-align: center;
+	font-size: 130px;
+	-webkit-transform: translateZ(150px);
+}
+/* 各主体样式 让它们组成立方体 */
+.square_b {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-transform: rotateX(-90deg) translateZ(150px);
+	text-align: center;
+	font-size: 130px;
+}
+.square_c {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-transform: rotateX(90deg)translateZ(150px);
+	text-align: center;
+	font-size: 130px;
+}
+.square_d {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-transform: translateZ(-150px);
+	text-align: center;
+	font-size: 130px;
+}
+.square_e {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-transform: rotateY(90deg) translateZ(-150px) rotateZ(90deg);
+	text-align: center;
+	font-size: 130px;
+}
+.square_f {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: transparent;
+	text-align: center;
+	font-size: 130px;
+	-webkit-transform: rotateY(-90deg) translateZ(-150px) rotateZ(-90deg);
+}

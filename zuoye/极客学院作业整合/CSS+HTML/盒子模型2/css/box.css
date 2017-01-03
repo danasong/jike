@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.shoes_div{
+    background-color: #64a03d;
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+
+}
+.box_div{
+    padding: 10px;
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: #999;
+    border:5px solid red;
+    box-shadow:  5px 5px  10px  10px  #000;
+}
+
+/* .sack_div{
+
+    width: 130px;
+    height: 130px;
+     background-color: #666;
+} */
+
+
+.shoes_div1{
+
+    background-color: #64a03d;
+    width: 100px;
+    height: 100px;
+    
+
+}
+.box_div1{
+    padding: 10px;
+    margin: 100px;
+    width: 130px;
+    height: 130px;
+    background-color: #999;
+    border:5px solid red;
+    box-sizing:border-box;
+}

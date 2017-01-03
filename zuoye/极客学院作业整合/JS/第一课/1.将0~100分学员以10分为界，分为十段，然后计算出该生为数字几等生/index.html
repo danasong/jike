@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>将0~100分学员以10分为界，分为十段，然后计算出该生为数字几等生</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+    <!-- 包裹成绩的DIV -->
+                <div class="content col-md-6 col-md-offset-3">
+                <!-- 成绩输入-->
+                     <div class="input-group">
+                          <span class="input-group-addon">请输入您的学生成绩</span>
+                          <input type="text" id="grade"  class="form-control" placeholder="请输入数字" >
+                           <button type="button" class="submit btn btn-default" onclick="grade ()">提交</button>
+                     </div>
+                     <!-- 成绩单-->
+                     <p id="report" class="navbar-text"></p>
+                </div>
+                <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+    </body>
+</html>

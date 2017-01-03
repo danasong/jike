@@ -1,0 +1,23 @@
+/* 重置 */
+*{
+    margin:0;
+    padding: 0;
+}
+#container{
+    position: absolute;
+    margin:0 auto;
+}
+.box{
+    position:relative;
+    float: left;
+}
+.conternt{
+      padding: 10px;
+      border:1px solid #ccc;
+      border-radius: 5px;
+      box-shadow:  0px 0px 5px #ccc;
+}
+.conternt img {
+    width: 280px;
+    height: auto;
+}

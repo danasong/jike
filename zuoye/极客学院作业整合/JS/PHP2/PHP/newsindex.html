@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" href="css/normlizeindex.css"/>
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+	<link rel="stylesheet" href="css/newsindex.css"/>
+	<title>百度新闻</title>
+</head>
+<body>
+	<div class="content-div">
+			<header>
+				<div class="left-div">
+					<a class="nav-logo">
+						<span class="icon iconfont icon-baidu"></span>
+					</a>
+					<a class="nav-user">
+						<span class="icon iconfont icon-myline"></span>
+					</a>
+				</div>
+				<div class="right-div">
+					<a class="nav-solo">
+						<span class="icon iconfont icon-search"></span>
+					</a>
+					<a class="nav-more">
+						<span class="icon iconfont icon-add"></span>
+					</a>
+				</div>
+			</header>
+			<nav>
+				<ul class="cf">
+					<li><b></b><a href="#">推荐</a></li>
+					<li><b></b><a href="#">百家</a></li>
+					<li><b></b><a href="#">本地</a></li>
+					<li><b></b><a href="#">图片</a></li>
+					<li><b></b><a href="#">娱乐</a></li>
+					<li><b></b><a href="#">社会</a></li>
+					<li><b></b><a href="#">军事</a></li>
+					<li><b></b><a href="#">互联网</a></li>
+					<li><b></b><a href="#">科技</a></li>
+					<li><b></b><a href="#">女人</a></li>
+					<li><b></b><a href="#">更多</a></li>
+				</ul>
+			</nav>
+			<article class="new-man">
+				<div class="carousel_div">
+					<div class="img_div">
+						<a href="#">
+							<img src="images/timg.jpg" alt="">
+							<div class="setting">
+								<span>沈阳小区建筑神似韩国崇礼门</span>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/timg.jpg" alt="">
+							<div class="setting">
+								<span>沈阳小区建筑神似韩国崇礼门</span>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/timg.jpg" alt="">
+							<div class="setting">
+								<span>沈阳小区建筑神似韩国崇礼门</span>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/timg.jpg" alt="">
+							<div class="setting">
+								<span>沈阳小区建筑神似韩国崇礼门</span>
+							</div>
+						</a>
+					</div>
+					<div class="carousel_span-origin">
+						<span class="origin on"></span>
+						<span class="origin"></span>
+						<span class="origin"></span>
+						<span class="origin"></span>
+					</div>
+				
+				</div>
+			</article>
+
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/news.js"></script>
+	<script type="text/javascript">
+		var list_a = new Array();
+		$(document).ready(function(){
+				var devwidth=$("body").width();
+				var num=$("nav li");
+				$.each(num,function(i,n){
+					/*console.log(i,n);*/
+					var nbool=$(this).children("a").html().split('').length>2?true:false;
+					/*console.log($(this).children("a").html().split('').length);*/
+					if (nbool) {
+						$(this).width(devwidth/3);
+						$(this).children("b").css("left","-38px");
+					}else{
+						$(this).width(devwidth/6);
+					}
+					
+					list_a[i]=n;
+				});
+				var extent=list_a.length;
+				var list_finally =list_a[extent-1];
+				$(list_finally).attr("class","more");
+		});
+		
+
+	</script>
+</body>
+</html>

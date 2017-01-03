@@ -1,0 +1,13 @@
+.contet{
+    margin-top: 10%;
+} 
+#calculator{
+    width:160px;
+    text-align: center;
+}
+#zero{
+    width: 100%;
+}
+#equal{
+    width: 100%;
+}

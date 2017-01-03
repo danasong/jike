@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    </head>
+    <body id="body-i" class=" ">
+            <div id="conceal" class="conceal con">
+                <div class="nav-recommend">
+                    <ul id="nav-ul">
+                        <li>
+                            <a class="skintype" href="#" rel="hao123-skin">最新推荐</a>
+                        </li>
+                    </ul>
+                    <div class="op">
+                        <a class="b-ib btn  cansel" onclick="clothing()">取消</a>
+                        <a class="b-ib btn save" onclick="setCookie('name','2')">保存</a>
+                        <a class="b-ib btn reset" onclick="getCookie()">不使用皮肤</a>
+                    </div>
+                </div>
+                <div class="wgt-div">
+                    <div class="b-ib viewport">
+                        <ul class="screens">
+                            <li class="b-ib screen" onclick="change ('red')">
+                                <a class="item" >
+                                    <span class="b-ib img-wrapper">
+                                        <img src="image/023ec09814ec45235b83fdfdf760fb38.jpg" alt="">
+                                    </span>
+                                    <span class="tip-box">赤道</span>
+                                </a>
+                            </li>
+                             <li class="b-ib screen" onclick="change ('blue')" >
+                                <a class="item" >
+                                    <span class="b-ib img-wrapper">
+                                        <img src="image/90147c68357d0096f4a3279631f49551.jpg" alt="">
+                                    </span>
+                                    <span class="tip-box">冷兔合欢树</span>
+                                </a>
+                            </li>
+                             <li class="b-ib screen" onclick="change ('red')">
+                                <a class="item" >
+                                    <span class="b-ib img-wrapper">
+                                        <img src="image/6523c53f8c352ff18037fb7961140ae9.jpg" alt="">
+                                    </span>
+                                    <span class="tip-box">战狼吴京</span>
+                                </a>
+                            </li>
+                             <li class="b-ib screen" onclick="change ('green')">
+                                <a class="item">
+                                    <span class="b-ib img-wrapper">
+                                        <img src="image/ac377af7f1ef6ce82474d491577db94d.jpg" alt="">
+                                    </span>
+                                    <span class="tip-box">碟中谍5</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="body" class="body col-md-12">
+                <div class="head col-md-12>">
+                    <nav id="nav1" class="navba1 col-md-1"></nav>
+                    <nav id="navbar" class="navbar gray col-md-10">
+                        <div class="logo">
+                             <a href="#"><img src="image/107961b81275e992e361d1456eb09d9f.png" alt=""></a>
+                        </div>
+                        <div class="weather">
+                            <div class="weather2">
+                                     <a href="#">
+                                            <span class="g-ib">上海</span>
+                                            <span class="arrow"></span>
+                                     </a>
+                                     <a href="#">
+                                            <span class="g-ib icon"></span>
+                                            <span class="g-ib text">大雨</span>
+                                            <span class="g-ib ">19℃</span>
+                                     </a>
+                            </div>
+                            <div class="weather2">
+                                     <a href="#">
+                                            <span class="g-ib">10月22日</span>
+                                            <span class="g-ib ">周六</span>
+                                            <span class="g-ib ">九月廿二</span>
+                                     </a>
+                                     <a href="#">
+                                            <span class="g-ib">星座运势</span>
+                                     </a>
+                            </div>
+                        </div>
+                        <div class="weather3">
+                                 <a href="#">
+                                        <span class="g-ib person"></span>
+                                        <span class="g-ib">登陆</span>
+                                        <span class="g-ib ">云盘</span>
+                                        <span class="g-ib ">浏览器</span>
+                                 </a>
+                                 <a href="#">
+                                        <span class="g-ib" onclick="clothing()">换肤</span>              
+                                 </a>
+                            </div>
+                    </nav>
+                    <nav id="nav2" class="navba1 col-md-1"></nav>
+                </div>
+                <div class="seek col-md-12>">
+                    <div class="baidu  col-md-8 col-md-offset-2">
+                        <a class="logo" href="http:www.baidu.com">
+                              <span class="icon-baidu-logo"></span>
+                        </a>
+                        <a href="#" class="arrow-a">
+                            <i class="arrow-i">展开</i>
+                            <span class="tab-curr">网页</span>
+                        </a>
+                        <div></div>
+                        <form action="" method="get">
+                                <div class="input-shadow">
+                                    <input id="search-input" class="input input-hook" type="text" autocomplete="off" maxlength="100" name="word"/>
+                                </div>
+                                <div>
+                                      <button class="button button-hook"></button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content col-md-12">
+                    <div class="nav-div col-md-10 col-md-offset-1">
+                                <ul class="menus-br">
+                                    <li class="menu green">
+                                        <a class="link-a white">
+                                            <span class="title-span">首页</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">电视剧</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">最新电影</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">新闻头条</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">八卦娱乐</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">军事热点</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">热门游戏</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">小游戏</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">今日特价</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">特价旅游</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu">
+                                        <a class="link-a ">
+                                            <span class="title-span">本地生活</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="nav-div2 col-md-10 col-md-offset-1">
+                                <ul class="menus-br2">
+                                    <li class="menu">
+                                        <a class="link-a">
+                                            <span class="title-span green-span">权威推荐</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">人民网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">新华网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">央视网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">国际在线</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">中国日报网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">中国网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">中国经济网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">光明网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">央广网</span>
+                                        </a>
+                                    </li>
+                                     <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">求是网</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">中国网信网</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu2">
+                                        <a class="link-a ">
+                                            <span class="title-span">中国青年网</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="nav-div3 col-md-10 col-md-offset-1">
+                        <div class="list-div ">
+                            <div class="servicetab-bd">
+                                <div class="box-starbar">
+                                    <ul>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-tv"></i>
+                                                <a  href="#">电视剧</a>
+                                                <span class="split">|</span>
+                                                <a href="#">综艺</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-game"></i>
+                                                <a class="press-a" href="#">游戏</a>
+                                                <span class="split">|</span>
+                                                <a href="#">小游戏</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-movie"></i>
+                                                <a  href="#">电视剧</a>
+                                                <span class="split">|</span>
+                                                <a href="#">直播</a>
+                                            </div>
+                                        </li>
+                                         <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-game"></i>
+                                                <a class="press-a" href="#">动画</a>
+                                                <span class="split">|</span>
+                                                <a href="#">漫画</a>
+                                            </div>
+                                        </li>
+                                         <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-movie"></i>
+                                                <a  href="#">电视剧</a>
+                                                <span class="split">|</span>
+                                                <a href="#">直播</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-game"></i>
+                                                <a class="press-a" href="#">动画</a>
+                                                <span class="split">|</span>
+                                                <a href="#">漫画</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-movie"></i>
+                                                <a  href="#">电视剧</a>
+                                                <span class="split">|</span>
+                                                <a href="#">直播</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-game"></i>
+                                                <a class="press-a" href="#">动画</a>
+                                                <span class="split">|</span>
+                                                <a href="#">漫画</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-movie"></i>
+                                                <a  href="#">电视剧</a>
+                                                <span class="split">|</span>
+                                                <a href="#">直播</a>
+                                            </div>
+                                        </li>
+                                        <li class="startbar-list">
+                                            <div class="press-list">
+                                                <i class="star-icon i-game"></i>
+                                                <a class="press-a" href="#">动画</a>
+                                                <span class="split">|</span>
+                                                <a href="#">漫画</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <div class="box-startools">
+                                <div class="star-div">
+                                    <i class="star-icon i-life"></i>
+                                    <a class=" a-right"></a>
+                                    <div class="startools-container">
+                                        <a class="startools-link">天气</a>
+                                        <a class="startools-link">星座</a>
+                                        <a class="startools-link">网盘</a>
+                                        <a class="startools-link">快递</a>
+                                        <a class="startools-link">违章</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="g-br3">
+                                
+                                    <div class="g-li greens">
+                                        <a href="#">
+                                            <span>推荐</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <i class="g-br6"></i>
+                                     <div class="g-li ">
+                                        <a href="#">
+                                            <span>社会</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <i class="g-br6"></i>
+                                     <div class="g-li ">
+                                        <a href="#">
+                                            <span>娱乐</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <i class="g-br6"></i>
+                                     <div class="g-li ">
+                                        <a href="#">
+                                            <span>军事</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <i class="g-br6"></i>
+                                     <div class="g-li ">
+                                        <a href="#">
+                                            <span>体育</span>
+                                        </a>
+                                    </div>
+
+                                    <img src="image/9230636a7f450d513625d78ea03ff252.jpg">
+            
+                            </div>
+                            
+                        </div>
+                        <div class="content-slider ">
+                            <div class="box-site">
+                                <ul>
+                                    <li class="site-li head-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">百度 •</a>
+                                        <a class="js-a">贴吧</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="box-site">
+                                <ul>
+                                    <li class="site-li head-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">百度 •</a>
+                                        <a class="js-a">贴吧</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site">
+                                <ul>
+                                    <li class="site-li head-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">百度 •</a>
+                                        <a class="js-a">贴吧</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <i class="i-baidu"></i>
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list2">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list2">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list2">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list2">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="box-site box-list2">
+                                <ul>
+                                    <li class="site-li head-li-box">
+                                        <div class="js-div">
+                                        <a class="js-a">东方财富•</a>
+                                        <a class="js-a">理财</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">新浪 •</a>
+                                        <a class="js-a">微博</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">搜狐 •</a>
+                                        <a class="js-a">热点</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">腾讯 •</a>
+                                        <a class="js-a">运势</a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">网 易 </a>
+                                        </div>
+                                    </li>
+                                     <li class="site-li">
+                                        <div class="js-div">
+                                        <a class="js-a">优酷网 </a>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+    </body>
+</html>

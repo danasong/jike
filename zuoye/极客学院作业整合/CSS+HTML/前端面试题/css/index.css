@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color: #1d9fd3;
+    border:  1px solid #eaecee;
+    background-color: #F0F0F0;
+    margin-top: 60px;
+}
+.content{
+    border: solid 1px #eaecee;
+    background: #F0F0F0;
+}
+.green{
+    color: #238f23;
+    font-weight: bold;
+}
+.nav-div{
+        background-color: #F0BA73;
+}
+nav{
+    min-width: 1200px;
+}

@@ -1,0 +1,171 @@
+/*重置页面css属性*/
+*{
+	margin: 0;
+	position: 0;
+}
+/* td行间距百分百 颜色 */
+td{
+	font:12px 宋体;
+      line-height: 150%;
+    color: #000000;
+}
+/* 设置body底层背景 */
+body{
+
+	/* background-color: red; */
+	background-image: url(../image/beijing.gif);
+
+	} 
+
+/* 设置table属性 */
+table{
+	margin: 0 auto;
+	text-align: center;
+       background-color: #fff;
+	}
+
+.table_conter td{
+   text-align: left;
+}
+/*  t头部图片左对齐*/
+.upangle{
+	width: 29px;
+  height:28px;
+  text-align: left;
+
+
+}
+/* 头部图片右对齐 */
+.upangring{
+  width: 29px;
+  height:28px;
+  text-align: right;
+}
+/* logo文字字间距 */
+.logo{
+	width: 432px;
+	height: 86px;
+  word-spacing:8px;
+
+}
+/* logo a标签 去下划线和变红 */
+.logo a{
+ text-decoration: none;
+ color: red;
+}
+/* 标题变大变黑top+10px */
+.head{
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin-top:10px
+
+}
+/* 重写TD下的左对齐 */
+.upcenter{
+   text-align: center!important;
+}
+
+
+/* 所以P标签变色 当作input后面的文字用 */
+p{
+    color: #0000ff;
+}
+/* 胸部介绍文章 */
+#uptext{
+    text-align: center;
+}
+/* font下的符号*变红 */
+font{
+    color: red;
+}
+/* 中间的表格的一些样式 */
+.righttext{
+    text-align: right!important;
+}
+
+input{
+    width: 209px;
+    height: 16px;
+}
+strong{
+    color: #0000ff;
+}
+.self{
+    width: 437px;
+    height: 90px;
+}
+
+#can_of strong{
+    color: #000 !important;
+}
+#can_of input{
+  width: 13px;
+  height: 13px;
+  text-align: left;
+  margin: 0 auto;
+
+}
+#area_of input{
+  width: 13px;
+  height: 13px;
+  text-align: left;
+  margin: 0 auto;
+
+}
+#area_of strong{
+    color: #000 !important;
+}
+#area_of label{
+  color: red;
+}
+.small_td{
+  width: 88px;
+}
+#teacher_tr input{
+  width: 16px;
+
+}
+#submit_td{
+  width: 688px;
+  height: 88px;
+  text-align: center;
+}
+#submit_td input{
+  width: 71px;
+  height: 26px;
+}
+
+.content {
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#665D5D;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+  padding: 8px;
+  border-style: solid;
+  background-color: #ffffff;
+}
+
+.black_td {
+  background-color: #EEEEEE;
+}
+label{
+  text-align: 
+}
+/* 底部的一些样式 */
+.bottom_table{
+   position: 10px;
+}
+
+.base_tr td{
+      line-height: 70%!important;
+}
+.base_table
+{
+  margin-bottom: 20px;
+}
+#center_td{
+  text-align: center;
+}

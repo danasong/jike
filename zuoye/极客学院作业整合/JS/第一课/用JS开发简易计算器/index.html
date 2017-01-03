@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
+        <title>用JS开发简易计算器</title>
+    </head>
+    <body>
+<!-- 包裹外层DIV -->
+            <div class="contet col-md-6 col-md-offset-5">
+<!-- 包裹计算器div -->
+                 <div class="table-responsive">
+<!-- 计算器主体table -->
+                     <table id="calculator" class="table table-bordered table-hover">
+                         <thead>
+                                <tr class="danger">
+                                  <th  colspan="4">简易计算器</th>
+                                </tr>
+                         </thead>
+                         <tbody>
+                           <tr><td colspan="4"><input id="price" type="text" value="" class="form-control" placeholder="0" readonly></td></tr>
+                           <tr>
+                                <td><button id="one" type="button" class="submit btn btn-default" onclick="one(1)">1</button></td>
+                                <td><button id="two" type="button" class="submit btn btn-default" onclick="one(2)">2</button></td>
+                                <td><button id="three" type="button" class="submit btn btn-default" onclick="one(3)">3</button></td>
+                                <td><button type="button" class="submit btn btn-default" onclick="operation('+')">+</button></td>
+                           </tr>
+                           <tr>
+                                <td><button id="four" type="button" class="submit btn btn-default" onclick="one(4)">4</button></td>
+                                <td><button id="five" type="button" class="submit btn btn-default" onclick="one(5)">5</button></td>
+                                <td><button id="six" type="button" class="submit btn btn-default" onclick="one(6)">6</button></td>
+                                <td><button type="button" class="submit btn btn-default" onclick="operation('-')">-</button></td>
+                           </tr>
+                           <tr>
+                                <td><button id="seven" type="button" class="submit btn btn-default" onclick="one(7)">7</button></td>
+                                <td><button id="eight" type="button" class="submit btn btn-default" onclick="one(8)">8</button></td>
+                                <td><button id="nine" type="button" class="submit btn btn-default" onclick="one(9)">9</button></td>
+                                <td><button type="button" class="submit btn btn-default" onclick="operation('*')">x</button></td>
+                           </tr>
+                           <tr>
+                                <td colspan="2"><button id="zero" type="button" class="submit btn btn-default" onclick="one(0)">0</button></td>
+                                <td ><button id="equal" type="button" class="submit btn btn-default" onclick="c()">C</button></td>
+                                <td><button type="button" class="submit btn btn-default" onclick="operation('/')">/</button></td>
+                           </tr>
+                           <tr>
+                               <td colspan="4"><button id="equal" type="button" onclick="result2()" class="submit btn btn-default" >=</button></td>
+                           </tr>
+                            </tbody>
+                     </table>
+                 </div>
+            </div>
+<!-- js主程序-->
+            <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+    </body>
+</html>

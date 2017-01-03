@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.con_div
+{
+    /* display:-webkit-box;
+    -webkit-box-orient:vertical; */
+    display: -webkit-flex;
+    -webkit-flex-direction:column; 
+    width: 600px;
+    background-color: #999;
+}
+
+.first{
+    -webkit-order:2;
+    -webkit-flex:1;
+    height: 200px;
+    background-color: #666;
+}
+
+#second{
+    -webkit-orde:3;
+    -webkit-flex:1;
+    height: 200px;
+    background-color: #37B28A;
+}
+
+#three{
+    -webkit-orde:1;
+    -webkit-flex:1;
+    height: 200px;
+    background-color: #A36D61;
+}
+
+
+

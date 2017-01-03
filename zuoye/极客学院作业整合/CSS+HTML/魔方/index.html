@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<!-- 魔方动画坐标系 -->
+<style type="text/css">
+@-webkit-keyframes square {
+		 0% {
+		--webkit-transform:perspective(800px) rotateX(10deg) rotateY(10deg);
+		}
+		 10% {
+		-webkit-transform:perspective(800px) rotateX(60deg) rotateY(60deg);
+		}
+		 20% {
+		-webkit-transform:perspective(800px) rotateX(120deg) rotateY(120deg);
+		}
+		 30% {
+		-webkit-transform:perspective(800px) rotateX(180deg) rotateY(180deg);
+		}
+		 40% {
+		-webkit-transform:perspective(800px) rotateX(270deg) rotateY(270deg);
+		}
+		 50% {
+		-webkit-transform:perspective(800px) rotateX(360deg) rotateY(360deg);
+		}
+		 60% {
+		-webkit-transform:perspective(800px) rotateY(60deg) rotateX(60deg);
+		}
+		 70% {
+		-webkit-transform:perspective(800px) rotateY(120deg) rotateX(120deg);
+		}
+		 80% {
+		-webkit-transform:perspective(800px) rotateY(180deg) rotateX(180deg);
+		}
+		 90% {
+		-webkit-transform:perspective(800px) rotateY(270deg) rotateX(270deg);
+		}
+		 100% {
+		-webkit-transform:perspective(800px)rotateY(360deg) rotateX(360deg);
+		}
+}
+
+</style>
+
+<body>
+<!-- 魔方外框 -->
+<div id="view" style="width:300px;height:300px;margin:280px auto 0 auto">
+  <!-- 魔方主体 -->
+  <div id="box">
+    <!-- A面 -->
+    <div class="square_a">
+      <div class="yellow"></div>
+      <div class="yellow_1"></div>
+      <div class="yellow_2"></div>
+      <div class="yellow_3"></div>
+      <div class="yellow_4"></div>
+      <div class="yellow_5"></div>
+      <div class="yellow_6"></div>
+      <div class="yellow_7"></div>
+      <div class="yellow_8"></div>
+    </div>
+    <!-- B面 -->
+    <div class="square_b">
+      <div class="blue"></div>
+      <div class="blue_1"></div>
+      <div class="blue_2"></div>
+      <div class="blue_3"></div>
+      <div class="blue_4"></div>
+      <div class="blue_5"></div>
+      <div class="blue_6"></div>
+      <div class="blue_7"></div>
+      <div class="blue_8"></div>
+    </div>
+    <!-- C面 -->
+    <div class="square_c">
+      <div class="red"></div>
+      <div class="red_1"></div>
+      <div class="red_2"></div>
+      <div class="red_3"></div>
+      <div class="red_4"></div>
+      <div class="red_5"></div>
+      <div class="red_6"></div>
+      <div class="red_7"></div>
+      <div class="red_8"></div>
+    </div>
+    <!-- D面 -->
+    <div class="square_d">
+      <div class="violet"></div>
+      <div class="violet_1"></div>
+      <div class="violet_2"></div>
+      <div class="violet_3"></div>
+      <div class="violet_4"></div>
+      <div class="violet_5"></div>
+      <div class="violet_6"></div>
+      <div class="violet_7"></div>
+      <div class="violet_8"></div>
+    </div>
+    <!-- E面 -->
+    <div class="square_e">
+      <div class="green"></div>
+      <div class="green_1"></div>
+      <div class="green_2"></div>
+      <div class="green_3"></div>
+      <div class="green_4"></div>
+      <div class="green_5"></div>
+      <div class="green_6"></div>
+      <div class="green_7"></div>
+      <div class="green_8"></div>
+    </div>
+    <!-- F面 -->
+    <div class="square_f">
+      <div class="orange"></div>
+      <div class="orange_1"></div>
+      <div class="orange_2"></div>
+      <div class="orange_3"></div>
+      <div class="orange_4"></div>
+      <div class="orange_5"></div>
+      <div class="orange_6"></div>
+      <div class="orange_7"></div>
+      <div class="orange_8"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

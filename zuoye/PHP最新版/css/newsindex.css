@@ -1,0 +1,243 @@
+﻿.cf::before,
+.cf:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+html{
+	height: 100%;
+	font-size: 62.5%;
+	font-family: arial;
+}
+body{
+	height: 100%;
+}
+.content-div{
+	width: 100%;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 48px;
+	background:  #3E98F0 url(../images/logo.png) no-repeat center center;
+	background-size: 65px 20px;
+	border: 1px solid #5dabf0;
+}
+.left-div{
+	float: left;
+}
+.left-div a{
+	padding: 0  10px;
+	line-height: 48px;
+	display: inline-block;
+}
+.right-div{
+	float: right;
+}
+.right-div a{
+	padding: 0  10px;
+	line-height: 48px;
+	display: inline-block;
+}
+.icon{
+	color: #fff;
+	font-size:1.6rem;
+}
+nav ul{
+	list-style: none;
+	padding:0px;
+	margin: 0;
+	border-top: 0.5px solid rgb(93, 171, 240);
+	background: rgb(62, 152, 240);
+}
+nav ul li{
+	float: left;
+/* 	width: 16.66%; */
+	padding:10px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 1.6rem;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li b{
+  position: relative;
+  top: 0px;
+  left: -15px;
+  height: 12px;
+  width: 1px;
+  display: inline-block;
+  overflow-y: hidden;
+  background-color: #5dabf0;
+}
+.more{
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-image: url(../images/nav-down_9d191a2.png);
+  	background-position: 88% center;
+}
+/* 轮播图 */
+.new-man{
+	margin-top: 1rem;
+}
+.carousel_div{
+	padding:0;
+	margin:0 auto;
+	text-align: center;
+	width: 30rem;
+	overflow: hidden;
+}
+.img_div{
+	width: 5000px;
+	height: 18rem;
+}
+.setting{
+	display: inline-block;
+	position: relative;
+	width: 30rem;
+	top: -35px;
+	background: rgba(0, 0, 0, 0.53);
+}
+.img_div span{
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: 100;
+	width: 28rem;
+	height: 2.5rem;
+	text-align: left;
+	line-height: 2.5rem;
+	z-index: 100;
+	position: relative;
+	left: 1rem;
+	color: #fff;
+}
+.carousel_div a{
+	display: inline-block;
+  	position: relative;
+  	float: left;
+	width: 30rem;
+	height: 18rem;
+	overflow: hidden;
+}
+.carousel_div a img{
+	width: 100%;
+	display: inline-block;
+	height: 18rem;
+	border: .1rem solid #B1AEAE;	
+}
+.carousel_span-origin{
+	text-align: right;
+}
+.origin{
+	position: relative;
+	top: -1rem;
+	right: .2rem;
+	display: inline-block;
+	border: 1px solid #666;
+	background: #D9D7D7;
+	border-radius: 15px;
+	width: .7rem;
+	height: .7rem;
+}
+.on{
+	background: #999;
+}
+.canim{
+	animation: carousel_image 15s cubic-bezier(0.25, 0.98, 0.26, 1) forwards infinite;
+}
+
+/* 时事热点list */
+/* .animat_news_list{
+	animation: new_news_animat 15s cubic-bezier(0.25, 0.98, 0.26, 1) forwards infinite;
+} */
+.new_news{
+	height: 3rem;
+	overflow: hidden;
+	display: flex;
+}
+.new_news_div{
+	flex:0.6;
+	margin: 0 auto;
+	padding: 0 0 0 0.8rem;
+	text-align: center;
+}
+.new_news h1{
+	background: red;
+	display: inline-block;
+	font-size: .14rem;
+	color: #f0f0f0;
+	padding: .3rem;
+}
+.new_news_ul{
+	flex:4.4;
+	height: 3rem;
+	padding: 0;
+	margin:0 auto;
+	list-style: none;
+}
+.new_news_li{
+	vertical-align: middle;
+	padding: .8rem .8rem .8rem 0;
+}
+.new_news_li a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #545454;
+}
+/* 新闻list */
+.news_man{
+	margin:0 auto;
+}
+.news_lists{
+	padding: 0;
+	margin:0;
+}
+.news_list{
+	padding: 0 1.3rem;
+	list-style: none;
+	display: flex;
+	border-bottom: 1px solid #e6e6e6;
+	margin-top: 1rem;
+}
+.news_list h1{
+	font-size: 1.3rem;
+}
+.newsimg{
+	flex:1;
+}
+.newsimg img{
+	width: 100%;
+	height: auto;
+}
+.news_content{
+	flex:2;
+	margin-left: 1rem;
+	padding: 0 0 .8rem;
+}
+.news_content p{
+	margin:  1.2rem 0  0 0 ;
+}
+.news_content span{
+	vertical-align: bottom;
+	display: inline-block;
+}
+.news_content span:nth-child(2){
+	margin-left: .8rem;
+	border:1px solid #ff0000;
+	border-radius: 3px;
+	color: #ff0000;
+}
+/*切屏读取横联*/
+.lineli{
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+}
+@keyframes carousel_image{
+    0%{transform:translate(0);}
+    50%{transform:translate(-30rem);}
+    70%{transform:translate(-60rem);}
+    100%{transform:translate(-90rem);}
+}
